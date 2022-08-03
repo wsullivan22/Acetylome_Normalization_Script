@@ -11,8 +11,8 @@ workbook = openpyxl.load_workbook(path_to_acetylome_data, data_only=True)
 active_sheet = workbook.active
 
 
-# Accepts the acetylated peptide accession as a parameter and finds and returns the row of the matching accession
-# in the Total_Proteomics_Contaminants_FALSE_Table Excel workbook
+# Accepts the acetylated peptide accession as a parameter and finds and returns the average counts of the matching
+# accession in the Total_Proteomics_Contaminants_FALSE_Table Excel workbook
 def find_matching_accession(accession):
     workbook = openpyxl.load_workbook(path_to_total_proteomics_data, data_only=True)
     active_sheet = workbook.active
